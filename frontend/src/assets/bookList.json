@@ -1,0 +1,211 @@
+[
+    {
+        "id": 1,
+        "name": "Fantasy Tales",
+        "title": "A Journey through Enchanted Lands",
+        "price": 35,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 2,
+        "name": "Mystery Chronicles",
+        "title": "Unravel the Secrets of the Past",
+        "price": 12.99,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 3,
+        "name": "Science Wonders",
+        "title": "Explore the World of Science",
+        "price": 0,
+        "category": "Free",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 4,
+        "name": "Historical Legends",
+        "title": "Great Tales from History",
+        "price": 9.50,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 5,
+        "name": "Adventure Series",
+        "title": "Thrilling Adventures for All Ages",
+        "price": 0,
+        "category": "Free",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 6,
+        "name": "Tech Innovations",
+        "title": "The Latest in Technology",
+        "price": 15.75,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 7,
+        "name": "Artistic ",
+        "title": "Discover the World of Art",
+        "price": 0,
+        "category": "Free",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 8,
+        "name": "Cooking Delights",
+        "title": "Recipes from Around the World",
+        "price": 20.00,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 9,
+        "name": "Travel Diaries",
+        "title": "Adventures from Around the Globe",
+        "price": 22,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 10,
+        "name": "Horror Nights",
+        "title": "Scary Stories for the Brave",
+        "price": 5.99,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 11,
+        "name": "Philosophy Insights",
+        "title": "Thoughts and Reflections",
+        "price": 98,
+        "category": "paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 12,
+        "name": "Health and Wellness",
+        "title": "Guide to a Healthy Life",
+        "price": 14.49,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 13,
+        "name": "Poetry Collection",
+        "title": "Verses for Every Mood",
+        "price": 0,
+        "category": "Free",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 14,
+        "name": "Children's Fables",
+        "title": "Stories for Young Minds",
+        "price": 7.25,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 15,
+        "name": "Romantic Tales",
+        "title": "Love Stories for the Heart",
+        "price": 0,
+        "category": "Free",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 16,
+        "name": "Biographies",
+        "title": "Lives of Great Personalities",
+        "price": 18.30,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 17,
+        "name": "Self-Help",
+        "title": "Guidance for Better Living",
+        "price": 35,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 18,
+        "name": "Fantasy Realms",
+        "title": "Epic Stories of Magic and Adventure",
+        "price": 11.00,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 19,
+        "name": "Crime Novels",
+        "title": "Detective Stories",
+        "price": 35,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 20,
+        "name": "Spiritual Journey",
+        "title": "Path to Enlightenment",
+        "price": 13.25,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 21,
+        "name": "Classic Literature",
+        "title": "Timeless Stories",
+        "price": 35,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 22,
+        "name": "Science Fiction",
+        "title": "Futuristic Adventures",
+        "price": 8.75,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 23,
+        "name": "Motivational Talks",
+        "title": "Inspiration for Everyone",
+        "price": 35,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 24,
+        "name": "Environmental Awareness",
+        "title": "Understanding Our Planet",
+        "price": 19.99,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 25,
+        "name": "Fashion Trends",
+        "title": "Latest in Fashion",
+        "price": 35,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    },
+    {
+        "id": 26,
+        "name": "Music Legends",
+        "title": "Stories of Iconic Musicians",
+        "price": 22.50,
+        "category": "Paid",
+        "imageUrl": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721109027~exp=1721112627~hmac=aceb80cb19227c2df575ed7b5fdffda52e11c2a74a1ce68bad017c09d2e87d9d&w=740"
+    }
+    
+]
