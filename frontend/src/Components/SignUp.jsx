@@ -1,25 +1,54 @@
 import React, { useState } from 'react';
 import Login from './Login';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form"
+import axios from 'axios';
+import toast from 'react-hot-toast';
+
 
 const SignUp = () => {
     const [name , setName] = useState('');
     const [email , setEmail] = useState('');
     const [pass , setPass] = useState('');
-
+    const navigate = useNavigate()
     const {
         register,
         handleSubmit,
         formState: { errors },
       } = useForm()
-      const onSubmit = (data) => console.log(data)
+      const onSubmit =async (data) => {
+       const userInfo={
+            name:data.name,
+            email:data.email,
+            password:data.password
+        }
+        await axios.post('http://localhost:8000/user/signup',userInfo)
+        .then((res)=>{
+            console.log(res.data);
+            if(res.data){
+                // alert("SignUp Successfuly");
+                toast.success(" SignUp Successfuly")
+                setTimeout(()=>{
+                    localStorage.setItem('userInfo', JSON.stringify(res.data.user));
+                    navigate("/");
+                       window.location.reload();
+                 },1000)
+            }
+            localStorage.setItem('userInfo', JSON.stringify(res.data.user));
+        }).catch((err)=>{
+           if(err.response){
+            console.log(err);
+            // alert('Error :'+ err.response.data.message)
+            toast.error('Error :'+ err.response.data.message)
+           }
+        })
+      }
       console.log(pass , email)
 
     return (
         <>
         <div className='flex justify-center items-center '>
-            <div className='max-w-screen-2xl bg-base-200 rounded-badge container max-auto md:px-20 px-4 mt-28 w-1/2 p-10'>
+            <div className='max-w-screen-2xl bg-base-200 rounded-badge container max-auto md:px-20 px-4 mt-28 w-full md:w-1/2 p-10'>
                 <form onSubmit={handleSubmit(onSubmit)} method="dialog ">
 
 

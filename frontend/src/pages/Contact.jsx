@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <>
         <div className='flex justify-center items-center '>
-            <div className='max-w-screen-2xl bg-base-200 rounded-badge container max-auto md:px-20 px-4 mt-28 w-1/2 p-10'>
+            <div className='max-w-screen-2xl bg-base-200 rounded-badge container max-auto md:px-20 px-4 mt-28 w-full md:w-1/2 p-10'>
                 <form onSubmit={handleSubmit(onSubmit)} method="dialog ">
 
 

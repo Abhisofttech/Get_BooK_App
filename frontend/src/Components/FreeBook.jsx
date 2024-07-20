@@ -1,13 +1,30 @@
-import React from 'react'
-import bookList from '../assets/bookList.json'
+import React , {useState , useEffect}from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import axios from 'axios';
 import Card from './Card';
 
 const FreeBook = () => {
-  const bookData = bookList.filter((data) => data.category === 'Free');
-  console.log(bookData);
+  
+
+  const [book, setBook] = useState([]);
+  useEffect(() => {
+    const getBook = async () => {
+      try {
+        const res = await  axios.get('http://localhost:8000/book');
+        console.log(res.data);
+        setBook(res.data.filter((data) => data.category === 'Free'));
+        console.log(book)
+
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    getBook();
+  }, [])
+ 
+
   var settings = {
     dots: true,
     infinite: false,
@@ -52,7 +69,7 @@ const FreeBook = () => {
         </div>
         <div className='m-6  p-9'>
           <Slider {...settings}>
-            {bookData.map((item)=>(
+            {book.map((item)=>(
               <Card item={item} key={item.id} />
             ))}
             

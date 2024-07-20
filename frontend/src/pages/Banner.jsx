@@ -26,7 +26,7 @@ const Banner = () => {
 </label>
 
 </div>
-<button className="btn btn-active btn-secondary mt-3">Submit</button>
+<button className="btn btn-active btn-secondary mt-3">Get Started</button>
 </div>
 <div className=' order-1 w-full md:w-1/2 flex justify-center p-4 '>
 <img src={banner} alt="This is stack of Books"  />
