@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 8001;
 const URI = process.env.MONGODB_URI;
 
-console.log("MongoDB URI:", URI); // Debug statement
+// console.log("MongoDB URI:", URI); // Debug statement
 
 app.use(cors()); // Apply CORS middleware
 app.use(express.json());

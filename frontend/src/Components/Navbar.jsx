@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Login from './Login';
 import { useAuth } from '../context/AuthProvider';
 import Logout from './Logout';
+import toast from 'react-hot-toast';
 
 
 const Navbar = () => {
@@ -22,9 +23,18 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         }
     }, [])
+const handleCourceClick = () =>{
+    if(!authUser){
+      toast.error("You have to SignUp or Loggin To access course Books",{
+               duration: 2000,
+            });
+        
+    }
+}
+
     const navItems = (<>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/course'>Course</Link></li>
+        <li><Link to='/course' onClick={handleCourceClick}>Course</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
         <li><Link to='/about'>About</Link></li>
     </>)
@@ -80,7 +90,7 @@ const Navbar = () => {
                         authUser ? <Logout /> :
 
                             <div className="mx-2 ">
-                                <a className="btn" onClick={() => { document.getElementById("my_modal_3").showModal() }}>Login</a>
+                                <a className="btn hover:border-grey-100" onClick={() => { document.getElementById("my_modal_3").showModal() }}>Login</a>
                                 <Login />
                             </div>
                     }
