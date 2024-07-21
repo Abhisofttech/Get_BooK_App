@@ -28,7 +28,6 @@ const handleCourceClick = () =>{
       toast.error("You have to SignUp or Loggin To access course Books",{
                duration: 2000,
             });
-        
     }
 }
 
@@ -88,7 +87,6 @@ const handleCourceClick = () =>{
                     </div>
                     {
                         authUser ? <Logout /> :
-
                             <div className="mx-2 ">
                                 <a className="btn hover:border-grey-100" onClick={() => { document.getElementById("my_modal_3").showModal() }}>Login</a>
                                 <Login />

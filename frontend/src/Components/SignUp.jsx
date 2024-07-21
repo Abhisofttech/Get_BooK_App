@@ -26,7 +26,6 @@ const SignUp = () => {
         .then((res)=>{
             console.log(res.data);
             if(res.data){
-                // alert("SignUp Successfuly");
                 toast.success(" SignUp Successfuly")
                 setTimeout(()=>{
                     localStorage.setItem('userInfo', JSON.stringify(res.data.user));
@@ -38,7 +37,6 @@ const SignUp = () => {
         }).catch((err)=>{
            if(err.response){
             console.log(err);
-            // alert('Error :'+ err.response.data.message)
             toast.error('Error :'+ err.response.data.message)
            }
         })
@@ -99,7 +97,6 @@ const SignUp = () => {
                         <button  type='submit' className='px-4 py-2 rounded-md text-white bg-pink-500 hover:bg-pink-700 duration-300'>SignUp</button>
                         <p>Have account? <Link to='/' className="text-blue-500 underline" onClick={()=>{document.getElementById("my_modal_3").showModal()}}> Login</Link>
                         <Login/></p>
-                    
                     </div>
                     <Login/>
                 </form>

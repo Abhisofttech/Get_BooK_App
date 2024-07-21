@@ -31,7 +31,7 @@ const Login = () => {
          .then((res)=>{
              console.log(res.data);
              if(res.data){
-                //  alert("Login Successfuly");
+                
                  toast.success("Login Successfully ")
                  closeModal();
                  setTimeout(()=>{
@@ -44,12 +44,11 @@ const Login = () => {
          }).catch((err)=>{
             if(err.response){
              console.log(err);
-            //  alert('Error :'+ err.response.data.message)
              toast.error('Error :'+ err.response.data.message)
             }
          })
        }
-      console.log(pass , email)
+    //   console.log(pass , email)
     
     return (
         <>

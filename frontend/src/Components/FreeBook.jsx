@@ -13,9 +13,9 @@ const FreeBook = () => {
     const getBook = async () => {
       try {
         const res = await  axios.get('http://localhost:8000/book');
-        console.log(res.data);
+        // console.log(res.data);
         setBook(res.data.filter((data) => data.category === 'Free'));
-        console.log(book)
+        // console.log(book)
 
       } catch (err) {
         console.log(err);
@@ -72,7 +72,6 @@ const FreeBook = () => {
             {book.map((item)=>(
               <Card item={item} key={item.id} />
             ))}
-            
           </Slider>
           </div>
       </div>

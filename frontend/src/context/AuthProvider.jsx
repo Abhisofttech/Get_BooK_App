@@ -5,7 +5,6 @@ export default function AuthProvider({children}) {
  const [authUser ,setAuthUser] = useState(
  initialAuthUser ? JSON.parse(initialAuthUser) : undefined 
 );
-// console.log(initialAuthUser);
  return(
     <AuthContext.Provider value={[authUser,setAuthUser]}>
         {children}

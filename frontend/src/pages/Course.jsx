@@ -1,19 +1,17 @@
-import React, { useState ,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Card from '../Components/Card'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 
 const Course = () => {
-
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await  axios.get('http://localhost:8000/book');
-        console.log(res.data);
+        const res = await axios.get('http://localhost:8000/book');
+        // console.log(res.data);
         setBook(res.data);
-        console.log(book)
-
+        // console.log(book)
       } catch (err) {
         console.log(err);
       }
@@ -30,11 +28,9 @@ const Course = () => {
         </div>
         <div className='mt-10 grid grid-cols-1 md:grid-cols-3 gap-9'>
           {
-
             book.map((item) => (
               <Card item={item} key={item.id} />
             ))
-
           }
         </div>
       </div>
