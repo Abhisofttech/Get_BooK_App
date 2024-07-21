@@ -35,9 +35,9 @@ const Login = () => {
                  toast.success("Login Successfully ")
                  closeModal();
                  setTimeout(()=>{
-                    // window.location.reload();
-                    localStorage.setItem('userInfo', JSON.stringify(res.data.user));
-                    navigate("/");
+                     localStorage.setItem('userInfo', JSON.stringify(res.data.user));
+                     navigate("/");
+                     window.location.reload();
                  },1000)
                  
              }
