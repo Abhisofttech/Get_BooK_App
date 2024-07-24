@@ -48,7 +48,7 @@ const Login = () => {
             }
          })
        }
-    //   console.log(pass , email)
+      console.log(pass , email)
     
     return (
         <>

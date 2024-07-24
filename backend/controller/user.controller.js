@@ -32,10 +32,12 @@ const signUp =async  (req,res)=>{
 const login = async (req,res)=>{
     try{
         const {email ,password} = req.body;
+        // console.log(email , password)
         const user = await User.findOne({email});
+        console.log(user)
         const isMatch= await bcrypt.compare(password , user.password);
-        if(user || isMatch){
-            return res.status(400).json({message:" Invalid Email or Password!!!"})
+        if(!user || !isMatch){
+            return res.status(400).json({message:" Invalid Email or Password"})
         }else{
             res.status(200).json({message:"Login Successful",user:{
                 _id:user._id,
@@ -49,4 +51,34 @@ const login = async (req,res)=>{
         res.status(500).json({message:"Internal server error"})
     }
 }
+
+// const login = async (req, res) => {
+//     try {
+//         const { email, password } = req.body;
+//         const user = await User.findOne({ email });
+//         console.log('User found:', user); // Add this log
+//         if (!user) {
+//             return res.status(400).json({ message: "Invalid Email or Password!!!" });
+//         }
+//         const isMatch = await bcrypt.compare(password, user.password);
+//         console.log('Password match:', isMatch); // Add this log
+//         if (!isMatch) {
+//             return res.status(400).json({ message: "Invalid Email or Password!!!" });
+//         }
+//         res.status(200).json({
+//             message: "Login Successful",
+//             user: {
+//                 _id: user._id,
+//                 name: user.name,
+//                 email: user.email
+//             }
+//         });
+
+//     } catch (error) {
+//         console.log(error);
+//         res.status(500).json({ message: "Internal server error" });
+//     }
+// }
+
+
 module.exports = { signUp , login };
