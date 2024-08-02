@@ -5,7 +5,7 @@ const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [result, setResult] = React.useState("");
+    const [result, setResult] = useState("");
 
     const onSubmit = async (event) => {
       event.preventDefault();
@@ -24,7 +24,7 @@ const Contact = () => {
       if (data.success) {
         setResult("Form Submitted Successfully");
         event.target.reset();
-        toast.success(result);
+        toast.success("Form Submitted Succesfully");
       } else {
         console.log("Error", data);
         setResult(data.message);

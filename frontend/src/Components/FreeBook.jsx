@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import axios from 'axios';
 import Card from './Card';
+import bookList from '../assets/bookList.json'
 
 const FreeBook = () => {
   
@@ -13,9 +14,9 @@ const FreeBook = () => {
     const getBook = async () => {
       try {
         const res = await  axios.get('https://get-book-app-backend.onrender.com/book');
-        // console.log(res.data);
+        console.log(res.data);
         setBook(res.data.filter((data) => data.category === 'Free'));
-        // console.log(book)
+        console.log(book)
 
       } catch (err) {
         console.log(err);
